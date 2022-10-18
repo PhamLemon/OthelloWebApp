@@ -808,7 +808,7 @@ else:
       # 手を打つ
       if not board.move(x, y):
         print('そこには置けません')
-        #st.text('そこには置けません')
+        st.text('そこには置けません')
         # パス
         if not board.MovablePos[:, :].any():
           board.CurrentColor = - board.CurrentColor
