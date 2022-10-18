@@ -467,7 +467,6 @@ class Board:
         # すべての要素が0のときだけパス(1つでも0以外があるとFalse)
         if any(MovablePos[:, :]):
             return False
-
         # ゲームが終了しているときはパスできない
         if isGameOver():
             return False
@@ -780,7 +779,7 @@ if board.isGameOver():
 
   #盤面リセット
   board.__init__()
-  st.session_state.board = board.__init__()
+  st.session_state.board.__init__()
 
 
 # 手番の表示
@@ -800,6 +799,8 @@ submit_btn = st.button('決定')
 if where == "e":
     print('おつかれ')
     st.text('おつかれ')
+    board.__init__()
+    st.session_state.board.__init__()
 else:
     # 入力手をチェック
     if board.checkIN(where):
