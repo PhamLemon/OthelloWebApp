@@ -1,3 +1,2 @@
 numpy==1.21.4
-matplotlib @ file:///C:/ci/matplotlib-suite_1634667159685/work
 scipy @ file:///C:/ci/scipy_1630606917240/work
