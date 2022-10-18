@@ -1,2 +1,0 @@
-numpy==1.21.4
-scipy @ file:///C:/ci/scipy_1630606917240/work
