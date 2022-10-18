@@ -13,7 +13,6 @@ st.caption('自分の手を打ったら決定を押してください。')
 import numpy as np
 import random
 import sys
-import matplotlib.pyplot as plt
 from scipy.spatial import distance
 import time
 
