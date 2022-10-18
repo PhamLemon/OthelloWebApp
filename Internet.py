@@ -791,7 +791,7 @@ else:
   print('白の番です:', end = "")
   where = board.randomInput()
   st.text('白の手番です：{}'.format(where))
-
+submit_btn = Fales
 where = st.text_input('例：c6')
 submit_btn = st.button('決定')
 
