@@ -795,6 +795,7 @@ else:
   where = board.randomInput()
   st.text('白の手番です：{}'.format(where))
 
+submit_btn = st.button('決定')
 
 # 対戦を終了
 if where == "e":
@@ -803,7 +804,6 @@ if where == "e":
 else:
     # 入力手をチェック
     if board.checkIN(where):
-      submit_btn = st.button('決定')
       x = IN_ALPHABET.index(where[0]) + 1
       y = IN_NUMBER.index(where[1]) + 1
       # 手を打つ
