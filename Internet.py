@@ -785,14 +785,15 @@ if board.isGameOver():
 
 # 手番の表示
 if board.CurrentColor == BLACK:
+  where = st.text_input('例：c6')
   print('黒の番です:', end = "")
   st.text('黒の手番です')
 else:
   print('白の番です:', end = "")
+  aa = where = st.text_input('例：c6')
   where = board.randomInput()
   st.text('白の手番です：{}'.format(where))
 submit_btn = False
-where = st.text_input('例：c6')
 submit_btn = st.button('決定')
 
 # 対戦を終了
