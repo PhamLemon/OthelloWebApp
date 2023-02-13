@@ -68,12 +68,18 @@ WIN_RATE = [0,0,0]   #[black,white,draw]
 epoc = 1000
 now_epoc = 1
 
-#genomのパス
-genom1 = 'genomdata.txt'
-
 # 手の表現
 IN_ALPHABET = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 IN_NUMBER = ['1', '2', '3', '4', '5', '6', '7', '8']
+
+#genomのパス
+path = 'genomdata.txt'
+
+with open(path,'r', encoding='UTF-8') as f:
+ genom1 = eval(f.read())
+ f.close()
+
+
 
 
 class Board:
