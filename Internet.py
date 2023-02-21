@@ -76,10 +76,10 @@ IN_NUMBER = ['1', '2', '3', '4', '5', '6', '7', '8']
 path = 'genomdata.txt'
 
 with open(path,'r', encoding='UTF-8') as f:
- genom1 = eval(f.read())
+ pairents = eval(f.read())
  f.close()
 
-
+genom1 = pairents[0]
 
 
 class Board:
